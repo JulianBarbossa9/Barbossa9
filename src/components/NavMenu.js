@@ -11,15 +11,17 @@ const NavMenuStyle = styled.div`
     width: 100%;
     padding: 1rem 0;
     background: var(--dark-bg);
+    
 
     ul{
         max-width: 1200px;
         margin: 0 auto;
         width: 100%;
         text-align: center;
+        
 
         li {
-            display: inline-block; /**Los posicióna verticalmente */
+            display: inline-block; /**Los posicióna horizontalmente*/
             border-radius: 9px;
             transition: 0.3s ease background-color;
             &:hover {
@@ -30,7 +32,7 @@ const NavMenuStyle = styled.div`
         a{
             display: inline-block;
             font-family:'RobotoMono Regular';
-            padding: 1rem 1.5rem;
+            padding: 1rem 2rem;
             color: var(--gray-1);
             outline: none;
 
@@ -41,7 +43,7 @@ const NavMenuStyle = styled.div`
     }
     .mobile-menu-icon{
         position: absolute;
-        right: 3rem;
+        right: 2.5rem;
         top:1rem;
         width: 2rem;
         cursor: pointer;
@@ -53,6 +55,7 @@ const NavMenuStyle = styled.div`
     }
     .closeNavIcon{
         display: none;
+       
     }
     @media only screen and (max-width: 768px){
         padding: 0;
@@ -72,10 +75,11 @@ const NavMenuStyle = styled.div`
             padding: 2rem;
             width: 90%;
             max-width: 300px;
-            border-radius: 12px;
+            border-radius: 20px;
             position: absolute;
-            right: 1rem;
+            right:1rem;
             top:var(--top);
+
             .closeNavIcon {
                 display: block;
                 width: 1.5rem;

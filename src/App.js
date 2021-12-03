@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Proyects from './pages/Proyects';
 import Contact from './pages/Contact';
+import HeaderSection from './components/HeaderSection';
 
 
 
@@ -30,6 +31,7 @@ function App() {
 
           <Route path="/">
             <Home />
+            <HeaderSection/>
           </Route>
 
           
