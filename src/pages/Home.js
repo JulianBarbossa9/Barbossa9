@@ -4,7 +4,7 @@ const Home = () => {
     return (  
         <Fragment>
             <div>
-                <h1>This is a Home Page</h1>
+                {/* <h1>This is a Home Page</h1> */}
             </div>
         </Fragment>
     );
