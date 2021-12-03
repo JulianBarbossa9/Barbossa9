@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md'
@@ -47,15 +47,23 @@ const NavMenuStyle = styled.div`
         cursor: pointer;
         display: none;
         outline: none;
+        *{
+            pointer-events: none;
+        }
     }
     .closeNavIcon{
         display: none;
-
     }
     @media only screen and (max-width: 768px){
+        padding: 0;
+        .hideitem {
+            transform: translateY(calc(-100% - var(--top)));
+            /* display: none; */
+        }
+        
         .mobile-menu-icon {
             display: block;
-            width: 1.5rem;
+            /* width: 1.5rem; */
         }
         .navItems{
             --top:1rem;
@@ -81,37 +89,77 @@ const NavMenuStyle = styled.div`
                 display: block;
                 margin-bottom: 0.5rem;
             }
-        }
-        
+        } 
     }
 `;
 
 const NavMenu = () => {
+
+    //State funcional el navMenu
+    const [showNav , SetShowNav ] = useState(false);
+
     return (  
         <NavMenuStyle>
-            <div className="mobile-menu-icon">
+            <div className="mobile-menu-icon"
+                onClick={() => SetShowNav(!showNav)}
+                role="button"
+                onKeyDown={() => SetShowNav(!showNav)}
+                tabIndex={0}
+            >
             <MdMenu />
             </div>
-            <ul className="navItems">
+            <ul className={!showNav ? 'navItems hideitem':'navItems'}>
 
-                <div className="closeNavIcon">
+                <div className="closeNavIcon"
+                    onClick={() => SetShowNav(!showNav)}
+                    role="button"
+                    onKeyDown={() => SetShowNav(!showNav)}
+                    tabIndex={0}
+                >
                     <MdClose />
                 </div>
 
                 <li>
-                    <NavLink to="/" exact> Home </NavLink>
+                    <NavLink to="/" exact
+                        onClick={() => SetShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => SetShowNav(!showNav)}
+                        tabIndex={0}
+                    > Home 
+                    </NavLink>
                 </li>
 
                 <li>
-                    <NavLink to="/about"> About </NavLink>
+                    <NavLink to="/about"
+                        onClick={() => SetShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => SetShowNav(!showNav)}
+                        tabIndex={0}
+                    > 
+                        About 
+                    </NavLink>
                 </li>
 
                 <li>
-                    <NavLink to="/proyects"> Proyects </NavLink>
+                    <NavLink to="/proyects"
+                        onClick={() => SetShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => SetShowNav(!showNav)}
+                        tabIndex={0}
+                    > 
+                        Proyects 
+                    </NavLink>
                 </li>
 
                 <li>
-                    <NavLink to="/contact"> Contact </NavLink>
+                    <NavLink to="/contact"
+                        onClick={() => SetShowNav(!showNav)}
+                        role="button"
+                        onKeyDown={() => SetShowNav(!showNav)}
+                        tabIndex={0}
+                    > 
+                        Contact 
+                    </NavLink>
                 </li>
             </ul>
         </NavMenuStyle>
