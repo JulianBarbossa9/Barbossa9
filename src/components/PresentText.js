@@ -7,13 +7,13 @@ const PresentStyle = styled.div`
     font-size: 0.8rem;
     line-height: 1.3em;
     @media only screen and (max-width: 768px){
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 `;
 const PresentText = ({mensaje}) => {
     return (  
         <Fragment>
-            <PresentStyle>
+            <PresentStyle className="para">
                 <p>{mensaje}</p>
             </PresentStyle>
         </Fragment>

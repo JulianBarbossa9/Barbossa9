@@ -48,7 +48,7 @@ const HeaderStyle = styled.div`
             width: 100%;
         }
         .hero__name{
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             font-family:'Montserrat SemiBold' ;
             color:var(--white);
@@ -75,11 +75,11 @@ const HeaderStyle = styled.div`
         
     }
     .hero__social{
-        left: 50px;
+        left: 45px;
         
     }
     .hero__scrollDown{
-        right: 50px;
+        right: 35px;
         margin-right: 10px;
         
     }

@@ -44,7 +44,7 @@ const NavMenuStyle = styled.div`
     .mobile-menu-icon{
         position: absolute;
         right: 1rem;
-        top:1rem;
+        top:1rem; 
         width: 2rem;
         cursor: pointer;
         display: none;
