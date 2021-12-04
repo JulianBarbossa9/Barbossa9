@@ -193,12 +193,12 @@ const HeaderSection = () => {
                             <div className="hero_social_text">
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/JulianBarbossa9" rel="noreferrer" target="_blank" 
+                                        <a href="https://www.linkedin.com/in/julianbarbossa9/" rel="noreferrer" target="_blank" 
                                            
                                         >LI</a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/JulianBarbossa9" target="_blank" rel="noreferrer">IG</a>
+                                        <a href="https://www.instagram.com/barbossa9/" target="_blank" rel="noreferrer">IG</a>
                                     </li>
                                     <li>
                                         <a href="https://github.com/JulianBarbossa9" target="_blank" rel="noreferrer">GIT</a>
