@@ -18,16 +18,17 @@ const HeaderStyle = styled.div`
         justify-content: center;
         position: relative;
         margin-top: 1.5rem;
+        
 
     }
     .hero_social_text{
         ul{
                 li{
-                    margin-bottom:1rem ;
+                    margin-bottom:0.5rem ;
                 }
                 a{
                     display: inline-block;
-                    font-size: 0.8rem;
+                    font-size: 0.7rem;
                     transform: rotate(-90deg);
                     /* letter-spacing: 5px; */
                     letter-spacing: 3px;
@@ -40,6 +41,7 @@ const HeaderStyle = styled.div`
         margin-bottom: -2.5rem;
         position: relative;
         margin-top: 2.2rem;
+        
         .hero_salu{
             margin-top: 1.5rem;
         }
@@ -63,6 +65,7 @@ const HeaderStyle = styled.div`
     }
     .hero__info{
         margin-top: -8rem;
+        
     }
     .hero__social,
     .hero__scrollDown{
@@ -71,8 +74,7 @@ const HeaderStyle = styled.div`
         gap: 1rem;
         position: absolute;
         bottom:200px;
-        width: 50px;
-        
+        width: 50px;        
     }
     .hero__social{
         left: 45px;
@@ -88,7 +90,7 @@ const HeaderStyle = styled.div`
         width: 50px;
         p{
             font-size: 0.5rem;
-            transform: translateY(-70px) rotate(90deg);
+            transform: translateY(-60px) rotate(90deg);
             letter-spacing: 5px;
             text-transform: uppercase;
             
