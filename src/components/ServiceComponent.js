@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { MdDesktopMac } from 'react-icons/md';
 import PresentText from './PresentText';
 import styled from 'styled-components';
 
@@ -7,6 +6,7 @@ import styled from 'styled-components';
 const ItemStyled = styled.div`
     text-align: center;
     .servicesItem__icon{
+    
         svg{
             width: 2.5rem;
         }
@@ -20,18 +20,18 @@ const ItemStyled = styled.div`
     }
 `;
 
-const ServiceComponent = () => {
+const ServiceComponent = ({icon, title, description}) => {
     return (   
        <Fragment>
             <ItemStyled>
                 <div className="servicesItem__icon">
-                    <MdDesktopMac />
+                    {/* <MdDesktopMac /> */}
+                    {icon}
                     <div className="sevicesItem__title">
-                        Data Science
+                        {title}
                     </div>
                     <PresentText 
-                        mensaje="Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula dictumst fermentum imperdiet vitae dapibus, per varius ac porta volutpat aenean. Tincidunt vitae facilisis elementum congue laoreet hac malesuada pellentesque imperdiet sociosqu, tempor sodales nam platea montes augue posuere sed mus inceptos lacus."
-                        
+                        mensaje={description}
                     />
                     
                 </div>

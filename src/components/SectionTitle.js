@@ -28,7 +28,7 @@ const SectionTitleStyle = styled.div`
 const SectionTitle = ({subHeading, title}) => {
     return (  
         <Fragment>
-            <SectionTitleStyle >
+            <SectionTitleStyle className="sectionTitleee">
                 <p>{subHeading}</p>
                 <h2>{title}</h2>
             </SectionTitleStyle >
