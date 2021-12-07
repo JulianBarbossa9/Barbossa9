@@ -12,6 +12,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
     img: UTrackerImg,
+    
   },
   {
     id: uuidv4(),
@@ -19,6 +20,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: GreenCtgImg,
+    
   },
   {
     id: uuidv4(),
@@ -26,6 +28,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
     img: CoinTrackerImg,
+    
   },
   {
     id: uuidv4(),
@@ -33,6 +36,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: CavinImg,
+   
   },
   {
     id: uuidv4(),
@@ -40,6 +44,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: ProjectImg,
+   
   },
 ];
 

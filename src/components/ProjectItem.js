@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
-import projectImage from '../assets/images/projectImg.png';
 import styled from 'styled-components';
 
 
@@ -19,17 +18,18 @@ const ProjectItemStyle = styled.div`
     .projectItem__info{
         margin-top: 0.5rem;
         background-color: var(--deep-dark);
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius:12px;
+        /* border: 2px solid red; */
         /* width:600px; */
     }
     .projectItem__title{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .projectItem__descrip{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         font-family: 'RobotoMono Regular';
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     @media only screen and (max-width: 768px){
         .projectItem__img{
@@ -41,22 +41,23 @@ const ProjectItemStyle = styled.div`
     }
 `;
 
-const ProjectItem = () => {
+const ProjectItem = ({img, title, descrip}) => {
     return (  
         <Fragment>
             <ProjectItemStyle>
             <Link to="/projects" className="projectItem__img">
-                <img src={projectImage} alt="project img"/>
+                <img src={img} alt="project img"/>
             </Link>
             <div className="projectItem__info">
                 <Link to="/#">
                     <h3 className="projectItem__title">
-                        proyecto 1
+                        {title}
                     </h3>
                 </Link>
                 <p className="projectItem__descrip">
-                    Reprehenderit non culpa fugiat aute consectetur. Duis magna ut quis tempor fugiat consequat. Aute aliquip adipisicing pariatur id exercitation magna in enim adipisicing irure.
+                    {descrip}
                 </p>
+                
             </div>
             </ProjectItemStyle>
         </Fragment>

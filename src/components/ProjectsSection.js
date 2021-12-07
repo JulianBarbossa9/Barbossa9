@@ -17,7 +17,7 @@ const ProjectSectionStyle = styled.div`
         text-align: center;
     }
     .projects__allItems{
-        /* display: flex; */
+        display: flex;
         gap:1rem;
         margin-top: 5rem;
     }
@@ -46,6 +46,19 @@ const ProjectSectionStyle = styled.div`
     .swiper-button-next::after{
         font-size: 1rem;
     }
+    @media only screen and (max-width: 768px){
+        .projects__allItems{
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 5rem;
+            gap: 3rem;
+            .projectItem__img{
+                width: 100%;
+            }
+        }
+
+    }
 `;
 
 const ProjectsSection = () => {
@@ -55,7 +68,7 @@ const ProjectsSection = () => {
                 <div className="container">
                     <SectionTitle 
                         subHeading="Some of my recent works"
-                        title="My proyects"
+                        title="Proyects"
                         className="sectionTitle"
                         
                     />
@@ -64,6 +77,22 @@ const ProjectsSection = () => {
                             spaceBetween={30}
                             slidesPerView={2}
                             navigation
+                            breakpoints={
+                                {
+                                    // cuando la ventana tenga un widht  >= 640px muestra 1 tarjetas
+                                    640: {
+                                        slidesPerView: 1,
+                                    },
+                                    // cuando la ventana tenga un widht  >= 768px muestra 2 tarjetas
+                                    768: {
+                                        slidesPerView: 2,
+                                    },
+                                    // cuando la ventana tenga un widht  >= 1200px muestra 3 tarjetas
+                                    1200: {
+                                        slidesPerView: 3,
+                                    }
+                                }
+                            }
                         >
                             {projects.map((project, index) => {
                                 if(index >= 5){
@@ -71,7 +100,12 @@ const ProjectsSection = () => {
                                 } 
                                 return(
                                     <SwiperSlide key={project.id}>
-                                        <ProjectItem />
+                                        <ProjectItem 
+                                            key={project.id}
+                                            img={project.img}
+                                            title={project.name}
+                                            descrip={project.desc}
+                                        />
                                     </SwiperSlide>
                                 );
                             })}
