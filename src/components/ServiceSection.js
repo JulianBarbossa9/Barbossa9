@@ -13,7 +13,7 @@ const ServiceSectionStyle = styled.div`
     }
     .services__allItems{
         display: flex;
-        gap:10rem;
+        gap:4rem;
         justify-content: space-between;
         margin-top: 2rem;
     }
