@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const ProjectItemStyle = styled.div`
     .projectItem__img{
         width: 100%;
-        height: 350px;
+        height: 400px;
         overflow: hidden;
         border-radius: 12px;
         display: inline-block;
@@ -21,12 +21,23 @@ const ProjectItemStyle = styled.div`
         background-color: var(--deep-dark);
         padding: 1rem;
         border-radius:12px;
+        /* width:600px; */
     }
     .projectItem__title{
         font-size: 1.5rem;
     }
     .projectItem__descrip{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
+        font-family: 'RobotoMono Regular';
+        margin-top: 1rem;
+    }
+    @media only screen and (max-width: 768px){
+        .projectItem__img{
+            height: 305px;
+        }
+        .projectItem__descrip{
+            font-size: 0.5rem;
+        }
     }
 `;
 
