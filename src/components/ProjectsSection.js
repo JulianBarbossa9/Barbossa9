@@ -19,7 +19,7 @@ const ProjectSectionStyle = styled.div`
     .projects__allItems{
         display: flex;
         gap:1rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .swiper-container{
         padding-top:3rem;

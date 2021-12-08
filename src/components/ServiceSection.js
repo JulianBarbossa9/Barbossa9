@@ -47,17 +47,17 @@ const ServiceSection = () => {
                         <ServiceComponent 
                             icon={<MdSignalCellularAlt /> }
                             title="Data Science"
-                            description="Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula dictumst fermentum imperdiet vitae dapibus, per varius ac porta volutpat aenean"
+                            description="I have done a few projects in this area in which mathematical calculations or a set of data is used to derive meaning."
                         />
                         <ServiceComponent 
                             icon={<MdCode />}
                             title="Development Software"
-                            description="Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula dictumst fermentum imperdiet vitae dapibus, per varius ac porta volutpat aenean"
+                            description="Throughout my career I have developed IT activities dedicated to the process of creation, design, deployment and support of software."
                         />
                         <ServiceComponent 
                             icon={<FiDatabase />}
                             title="Data Bases"
-                            description="Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula dictumst fermentum imperdiet vitae dapibus, per varius ac porta volutpat aenean"
+                            description="I have studied, traditional databases and cloud services, the latter is the one I like the most because of the multiple services it offers."
                         />
                     </div>
                 </ServiceSectionStyle>

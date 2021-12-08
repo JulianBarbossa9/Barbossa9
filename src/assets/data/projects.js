@@ -8,7 +8,7 @@ import CavinImg from '../images/cavinimg.jpg';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Lorem ipsum',
+    name: 'Bogotá Site Recommend',
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
     img: UTrackerImg,
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Lorem ipsum ',
+    name: 'Parking + ',
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: GreenCtgImg,
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Lorem ipsum ',
+    name: 'Quote Parking',
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
     img: CoinTrackerImg,
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: "Lorem ipsum ",
+    name: "Galaxy",
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: CavinImg,
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Lorem ipsum',
+    name: 'Three JS',
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: ProjectImg,
