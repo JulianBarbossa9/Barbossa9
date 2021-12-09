@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import SectionTitle from './SectionTitle';
-import styled from 'styled-components';
 import ContactInfoItem from './ContactInfoItem';
+import ContactForm from './ContactForm';
+import styled from 'styled-components';
 import { MdEmail, MdLocalPhone, MdPlace } from 'react-icons/md';
 
 
@@ -37,7 +38,7 @@ const ContactSection = () => {
                             />
                         </div>
                         <div className="right">
-                            Conctac form
+                           <ContactForm />
                         </div>
                     </div>
                 </div>
