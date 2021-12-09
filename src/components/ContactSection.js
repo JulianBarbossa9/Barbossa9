@@ -11,6 +11,46 @@ const ContactSectionStyle= styled.div`
     .sectionTitleee{
         text-align: center;
     }
+    .contactSection__wrappper{
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
+        justify-content: space-between;
+        position: relative;
+    }
+    .contactSection__wrappper::after{
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 70%;
+        background-color: var(--gray-1);
+        left: 55%;
+        top:30%;
+        transform: translate(-50%, -50%);
+    }
+    .left{
+        width: 100%;
+        max-width: 500px;
+    }
+    .right {
+        max-width: 500px;
+        width: 100%;
+    }
+    @media only screen and (max-width: 768px){
+        .contactSection__wrappper{
+            flex-direction: column;
+        }
+        .contactSection__wrappper::after{
+            display: none;
+        }
+        .left,
+        .right{
+            max-width: 100%;
+        }
+        .right{
+            padding: 2rem 2rem 2rem 2rem;
+        }
+    }
 `;
 
 const ContactSection = () => {
