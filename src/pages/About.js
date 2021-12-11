@@ -45,6 +45,33 @@ const AboutSectionStyle = styled.div`
              border: 2px solid var(--gray-1);
          }
      }
+
+     .about__info_items{
+         margin-top: 10rem;
+     }
+     .about__info__item{
+         margin-bottom: 10rem;
+     }
+     .about__info__heading{
+         font-size: 1.5rem;
+         text-transform: uppercase;
+     }
+     @media only screen and (max-width: 768px){
+         padding:10rem 0;
+         .top-section{
+             flex-direction: column;
+             gap:3rem; 
+         }
+         .about__subheading{
+             font-size: 1rem;
+         }
+         .about__heading{
+             font-size: 2rem;
+         }
+         .about__info_heading{
+             font-size: 1rem;
+         }
+     }
 `;
 
 
@@ -75,14 +102,26 @@ const About = () => {
                             />
                         </div>
                         <div className='right'>
-                            {/* <img src={AboutImage } alt="sb ima"/> */}
+                            <img src={AboutImage } alt="sb ima"/>
                         </div>
                     </div>
 
                     <div className='about__info_items'>
                         <div className='about__info__item'>
                             <h2 className='about__info__heading'>Education </h2>
-                            <AboutInfoItem />
+                            <AboutInfoItem 
+                                title="School"
+                                items={["Instituto Tecnico Industrial Centro Don Bosco"]}
+                            />
+
+                            <AboutInfoItem 
+                                title="College"
+                                items={["Universidad Militar Nueva Granada"]}
+                            />
+                            
+                            <AboutInfoItem 
+
+                            />
                         </div>
                     </div>
                 </div>
