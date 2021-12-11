@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import PresentText from './PresentText';
 import styled from 'styled-components';
 
 
@@ -8,6 +7,7 @@ const AboutItemStyle = styled.div`
     align-items: center;
     justify-content: flex-start;
     margin-top: 2rem;
+    position: relative;
     .title{
         font-size:2rem;
     }
@@ -32,21 +32,21 @@ const AboutItemStyle = styled.div`
         .items{
             position: initial;
             gap: 1rem;
-            left: -2rem;
+            /* left: 2rem; */
         }
         .title{
             font-size: 1.5rem;
         }
     }
 
-    @media only screen and (max-width: 2626px) and (min-width:1580px){
+    /* @media only screen and (max-width: 2626px) and (min-width:1580px){
         .items {
-            left: 21.5rem;
+            left: 23rem;
             /* border: 2px solid red; */
             font-size: 1rem; 
             
         }
-    }
+    } */
     
 `;
 

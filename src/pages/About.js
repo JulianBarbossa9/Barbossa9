@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 
 const AboutSectionStyle = styled.div`
-     padding: 20rem 0 10rem 0;
+     padding: 10rem 0 10rem 0;
      .top-section{
          display:flex;
          align-items:center;
@@ -50,7 +50,7 @@ const AboutSectionStyle = styled.div`
          margin-top: 10rem;
      }
      .about__info__item{
-         margin-bottom: 10rem;
+         margin-bottom: 9rem;
      }
      .about__info__heading{
          font-size: 1.5rem;
@@ -118,14 +118,29 @@ const About = () => {
                                 title="College"
                                 items={["Universidad Militar Nueva Granada"]}
                             />
+                        </div>
+                        <div className='about__info__item'>
+                            <h2 className='about__info__heading'>My Skill </h2>
+                            <AboutInfoItem 
+                                title="BackEnd"
+                                items={["MySql", "PHP", "HeidiSQL", "Node", "Python"]}
+                            />
+
+                            <AboutInfoItem 
+                                title="FrontEnd"
+                                items={["HTML","CSS","JavaScript", "React JS"]}
+                            />
                             
                             <AboutInfoItem 
-
+                                title="Other"
+                                items={["Data Science","AWS","Blender", "Maya", "Aftert Effects"]}
                             />
                         </div>
                     </div>
                 </div>
             </AboutSectionStyle>
+
+            <Footer />
         </Fragment>
     );
 }
