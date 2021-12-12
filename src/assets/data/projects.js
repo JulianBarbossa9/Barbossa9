@@ -12,14 +12,17 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
     img: UTrackerImg,
+  
     
   },
   {
     id: uuidv4(),
     name: 'Parking + ',
     desc:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
+    'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: GreenCtgImg,
+  
+
     
   },
   {

@@ -45,7 +45,7 @@ const ProjectItem = ({img, title, descrip}) => {
     return (  
         <Fragment>
             <ProjectItemStyle>
-            <Link to="/projects" className="projectItem__img">
+            <Link to="" className="projectItem__img">
                 <img src={img} alt="project img"/>
             </Link>
             <div className="projectItem__info">

@@ -5,10 +5,11 @@ import AboutInfoItem from '../components/AboutInfoItem';
 import ButtonSectionHeader from '../components/ButtonSectionHeader';
 import AboutImage from '../assets/images/about-page-img.png';
 import styled from 'styled-components';
+import ContactBanner from '../components/ContactBanner';
 
 
 const AboutSectionStyle = styled.div`
-     padding: 10rem 0 10rem 0;
+     padding: 10rem 0 0rem 0;
      .top-section{
          display:flex;
          align-items:center;
@@ -139,7 +140,7 @@ const About = () => {
                     </div>
                 </div>
             </AboutSectionStyle>
-
+            <ContactBanner />
             <Footer />
         </Fragment>
     );

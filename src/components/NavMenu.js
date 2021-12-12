@@ -152,7 +152,7 @@ const NavMenu = () => {
                         onKeyDown={() => SetShowNav(!showNav)}
                         tabIndex={0}
                     > 
-                        Proyects 
+                        Projects 
                     </NavLink>
                 </li>
 

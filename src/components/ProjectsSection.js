@@ -68,7 +68,7 @@ const ProjectsSection = () => {
                 <div className="container">
                     <SectionTitle 
                         subHeading="Some of my recent works"
-                        title="Proyects"
+                        title="Projects"
                         className="sectionTitle"
                         
                     />
