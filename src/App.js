@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Proyects from './pages/Proyects';
 import Contact from './pages/Contact';
+import ScroollToTop from './components/ScroollToTop';
 // import HeaderSection from './components/HeaderSection';
 
 
@@ -15,7 +16,7 @@ function App() {
       <Router>
 
         <NavMenu />
-
+        <ScroollToTop />
         <Switch>
           <Route path="/about">
             <About />
