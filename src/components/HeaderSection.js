@@ -1,5 +1,5 @@
 import React,{Fragment} from 'react';
-import HeroImage from '../assets/images/hero.png';
+import JuliImage from '../assets/images/img3.png';
 import ButtonSectionHeader from './ButtonSectionHeader';
 import PresentText from './PresentText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -18,8 +18,6 @@ const HeaderStyle = styled.div`
         justify-content: center;
         position: relative;
         margin-top: 1.5rem;
-        
-
     }
     .hero_social_text{
         ul{
@@ -92,8 +90,7 @@ const HeaderStyle = styled.div`
             font-size: 0.5rem;
             transform: translateY(-60px) rotate(90deg);
             letter-spacing: 5px;
-            text-transform: uppercase;
-            
+            text-transform: uppercase;   
         }
         img{
             max-height: 120px;
@@ -173,7 +170,7 @@ const HeaderSection = () => {
                             <span className="hero__name"> Julian Barbosa </span>
                         </h1>
                         <div className="hero__image">
-                            <img src={HeroImage} alt="fotoJulianB"/>
+                            <img src={JuliImage} alt="fotoJulianB"/>
                         </div>
                         <div className="hero__info">
                             <PresentText 
@@ -195,9 +192,7 @@ const HeaderSection = () => {
                             <div className="hero_social_text">
                                 <ul>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/julianbarbossa9/" rel="noreferrer" target="_blank" 
-                                           
-                                        >LI</a>
+                                        <a href="https://www.linkedin.com/in/julianbarbossa9/" rel="noreferrer" target="_blank">LI</a>
                                     </li>
                                     <li>
                                         <a href="https://www.instagram.com/barbossa9/" target="_blank" rel="noreferrer">IG</a>

@@ -1,17 +1,17 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
+import LogoBogota from '../images/logov1.png';
+import ParkingPlus from '../images/parking.png';
+import QuoteParking from '../images/utracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'Bogotá Site Recommend',
-    desc:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
-    img: UTrackerImg,
+    name: 'Bogotá Site Recommends',
+    desc:"The present project aims to develop a system that suggests tourist or leisure places to visit in a given region based on the user's places of interest and the method employed in the solution of the problem consists of a content-based recommendation algorithm using the One-Hot approach. One-Hot approach.",
+    img: LogoBogota,
+    link: 'https://github.com/JulianBarbossa9/Bogota-site-recommends-IA'
   
     
   },
@@ -19,9 +19,9 @@ const projects = [
     id: uuidv4(),
     name: 'Parking + ',
     desc:
-    'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
-    img: GreenCtgImg,
-  
+    'Parking nos encargamos de brindar de una manera fácil y sencilla al usuario una mejor forma de promocionar y encontrar un parqueadero en la ciudad de Bogotá, buscando extenderse a lo largo del territorio nacional e internacional. ',
+    img: ParkingPlus,
+    link: 'https://gestionjbdg.netlify.app'
 
     
   },
@@ -29,16 +29,18 @@ const projects = [
     id: uuidv4(),
     name: 'Quote Parking',
     desc:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula',
-    img: CoinTrackerImg,
+      'Parking Quoter was a mini project to complement Parking +, was developed in React and its main function is to give an estimate of the price of parking in the city of Bogota either a car or a motorcycle.',
+    img: QuoteParking,
+    link: 'https://calcularhoraparqueadero.netlify.app'
     
   },
   {
     id: uuidv4(),
     name: "Galaxy",
     desc:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
+      'A small galaxy made with Three.JS which can expand, change color and add or remove particles. ',
     img: CavinImg,
+    link:''
    
   },
   {
@@ -47,6 +49,7 @@ const projects = [
     desc:
       'Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis ultrices vehicula.',
     img: ProjectImg,
+    link:''
    
   },
 ];

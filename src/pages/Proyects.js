@@ -24,6 +24,7 @@ const ProjectsStyle = styled.div`
         position:relative;
         width: 300px;
         margin-top: 2rem;
+        caret-color:var(--gray-1);
     }
     .projects__searchbar input{
         width: 100%;
@@ -101,6 +102,7 @@ const Proyects = () => {
                                 title={item.name}
                                 descrip={item.desc}
                                 img={item.img}
+                                link={item.link}
                             />
                         ))}
                     </div>

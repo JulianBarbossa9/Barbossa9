@@ -31,6 +31,12 @@ const ProjectItemStyle = styled.div`
         font-family: 'RobotoMono Regular';
         margin-top: 0.5rem;
     }
+    .projectButton{
+        display:inline-block;
+        font-size: 0.5rem;
+        text-decoration: underline;
+        color: royalblue;
+    }
     @media only screen and (max-width: 768px){
         .projectItem__img{
             height: 305px;
@@ -41,7 +47,7 @@ const ProjectItemStyle = styled.div`
     }
 `;
 
-const ProjectItem = ({img, title, descrip}) => {
+const ProjectItem = ({img, title, descrip, link}) => {
     return (  
         <Fragment>
             <ProjectItemStyle>
@@ -57,7 +63,8 @@ const ProjectItem = ({img, title, descrip}) => {
                 <p className="projectItem__descrip">
                     {descrip}
                 </p>
-                
+
+                {link && <a className='projectButton' target="_blank" rel="noreferrer"  href={link}>Open Project</a>}
             </div>
             </ProjectItemStyle>
         </Fragment>

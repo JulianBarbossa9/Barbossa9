@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import SectionTitle from './SectionTitle';
 import PresentText from './PresentText';
 import ButtonSectionHeader from './ButtonSectionHeader';
-import ImageSectionAbout from '../assets/images/about-sec-img.png'
+import ImageSectionAbout from '../assets/images/rokect.png'
 import styled from 'styled-components';
 
 const AboutSectinStyle = styled.div`
@@ -89,7 +89,6 @@ const AboutSection = () => {
                             <ButtonSectionHeader
                                 btnLink="/proyects"
                                 btnText="Works"
-                                // outline=
                             />
                             <ButtonSectionHeader
                                 btnLink="/about"
@@ -101,7 +100,7 @@ const AboutSection = () => {
 
                     </div>
                     <div className="aboutSection__right">
-                        <img src={ImageSectionAbout} alt="" />
+                        <img src={ImageSectionAbout} alt="rockect" />
                     </div>
                 </div>
             </AboutSectinStyle >

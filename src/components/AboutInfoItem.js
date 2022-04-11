@@ -39,18 +39,11 @@ const AboutItemStyle = styled.div`
         }
     }
 
-    /* @media only screen and (max-width: 2626px) and (min-width:1580px){
-        .items {
-            left: 23rem;
-            /* border: 2px solid red; */
-            font-size: 1rem; 
-            
-        }
-    } */
+    
     
 `;
 
-const AboutInfoItem = ({title, items = ['HTML','CSS']}) => {
+const AboutInfoItem = ({title, items}) => {
     
     
     return (  

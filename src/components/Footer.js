@@ -140,6 +140,10 @@ const Footer = () => {
                                     {
                                         title:"GitHub",
                                         path:'https://github.com/JulianBarbossa9'
+                                    },
+                                    {
+                                        title:"Linkedin",
+                                        path:'https://www.linkedin.com/in/julianbarbossa9'
                                     }
                                 ]
                             }

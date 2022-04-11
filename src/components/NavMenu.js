@@ -61,7 +61,6 @@ const NavMenuStyle = styled.div`
         padding: 0;
         .hideitem {
             transform: translateY(calc(-100% - var(--top)));
-            /* display: none; */
         }
         
         .mobile-menu-icon {

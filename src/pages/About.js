@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import PresentText from '../components/PresentText';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ButtonSectionHeader from '../components/ButtonSectionHeader';
-import AboutImage from '../assets/images/about-page-img.png';
+import AboutImage from '../assets/images/img2.png';
 import styled from 'styled-components';
 import ContactBanner from '../components/ContactBanner';
 
@@ -97,7 +97,7 @@ const About = () => {
                             </div>
 
                             <ButtonSectionHeader 
-                                btnLink = "#"
+                                btnLink = "/about"
                                 btnText = "Dowload CV"
 
                             />
@@ -120,11 +120,22 @@ const About = () => {
                                 items={["Universidad Militar Nueva Granada"]}
                             />
                         </div>
+
+                        <div className='about__info__item'>
+                            <h2 className='about__info__heading'>Experience</h2>
+                            <AboutInfoItem 
+                                title="Internships "
+                                items={["Accenture: Aplication Development Analyst"]}
+                            />
+
+                           
+                        </div>
+                        
                         <div className='about__info__item'>
                             <h2 className='about__info__heading'>My Skill </h2>
                             <AboutInfoItem 
                                 title="BackEnd"
-                                items={["MySql", "PHP", "HeidiSQL", "Node", "Python"]}
+                                items={["SQL", "PHP", "Python", "Scripting"]}
                             />
 
                             <AboutInfoItem 
@@ -134,7 +145,7 @@ const About = () => {
                             
                             <AboutInfoItem 
                                 title="Other"
-                                items={["Data Science","AWS","Blender", "Maya", "Aftert Effects"]}
+                                items={["Data Science","AWS","Data Migration "]}
                             />
                         </div>
                     </div>
