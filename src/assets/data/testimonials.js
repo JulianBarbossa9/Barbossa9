@@ -1,7 +1,7 @@
 const testimonials = [
     {
       id: 1,
-      name: 'Shaif Arfan',
+      name: 'gg',
       title: 'CEO',
       org: 'WEB CIFAR',
       desc:

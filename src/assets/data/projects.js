@@ -12,14 +12,12 @@ const projects = [
     desc:"The present project aims to develop a system that suggests tourist or leisure places to visit in a given region based on the user's places of interest and the method employed in the solution of the problem consists of a content-based recommendation algorithm using the One-Hot approach. One-Hot approach.",
     img: LogoBogota,
     link: 'https://github.com/JulianBarbossa9/Bogota-site-recommends-IA'
-  
-    
   },
   {
     id: uuidv4(),
     name: 'Parking + ',
     desc:
-    'Parking nos encargamos de brindar de una manera fácil y sencilla al usuario una mejor forma de promocionar y encontrar un parqueadero en la ciudad de Bogotá, buscando extenderse a lo largo del territorio nacional e internacional. ',
+    'Parking we are in charge of providing in an easy and simple way to the user a better way to promote and find a parking lot in the city of Bogota, seeking to extend throughout the national and international territory.. ',
     img: ParkingPlus,
     link: 'https://gestionjbdg.netlify.app'
 

@@ -16,6 +16,7 @@ const ServiceSectionStyle = styled.div`
         gap:4rem;
         justify-content: space-between;
         margin-top: 2rem;
+        /* border: 2px solid red;  */
     }
     .sectionTitleee{
         text-align: center;

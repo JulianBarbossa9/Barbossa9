@@ -9,7 +9,8 @@ const FooterStyle = styled.div`
     background-color: var(--deep-dark);
     .container{
         display: flex;
-        gap:2rem;
+        gap:1.5rem;
+        /* border: 2px solid red;  */
     }
 
     .footer__col1{
@@ -33,7 +34,7 @@ const FooterStyle = styled.div`
         text-align: left;
         /* margin-right: 500px; */
         padding: 0.5rem 0;
-        margin-top: 3rem;
+        margin-top: 2rem;
         .para{
             margin-left: 0;
         }
@@ -154,7 +155,7 @@ const Footer = () => {
                 <div className="copyRight">
                     <div className='container'>
                          <PresentText 
-                            mensaje=" © 2021 - Julian Barbosa | Multimedia Engineer "
+                            mensaje=" © 2022 - Julian Barbosa | Multimedia Engineer "
                          />       
                     </div>
                 </div>

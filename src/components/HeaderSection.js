@@ -97,10 +97,11 @@ const HeaderStyle = styled.div`
             width: 15px;
             margin: 0 auto;
             object-fit: contain;
-          
+            
         }
         .hero__srollDown{
             img{
+                
                 max-height: 90px;
             }
         }

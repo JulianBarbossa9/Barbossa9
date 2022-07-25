@@ -19,7 +19,7 @@ const ProjectSectionStyle = styled.div`
     .projects__allItems{
         display: flex;
         gap:1rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .swiper-container{
         padding-top:3rem;
@@ -35,12 +35,14 @@ const ProjectSectionStyle = styled.div`
         right: 60px;
         left: auto;
         top:0;
-        transform: translateY(50%);
+        margin-top: 20px; 
+        /* transform: translateY(50%); */
         color:var(--gray-1);
         border-radius: 9px;
     }
     .swiper-button-next{
         right: 0;
+        /* border: 2px solid red;  */
     }
     .swiper-button-prev::after,
     .swiper-button-next::after{
@@ -75,7 +77,7 @@ const ProjectsSection = () => {
                     <div className="projects__allItems">
                         <Swiper
                             spaceBetween={30}
-                            slidesPerView={2}
+                            slidesPerView={3}
                             navigation
                             breakpoints={
                                 {

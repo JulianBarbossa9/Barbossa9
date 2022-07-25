@@ -12,6 +12,7 @@ const AboutSectinStyle = styled.div`
         align-items: center;
         justify-content: flex-start;
         text-align: left;
+        /* border: 2px solid red;  */
     }
 
     .aboutSection__left,

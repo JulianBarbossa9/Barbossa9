@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 const ContactBannerStyled = styled.div`
     padding: 10rem 0;
+    
     .contactBanner__wraper{
         background-color: var(--deep-dark);
         border-radius:12px;

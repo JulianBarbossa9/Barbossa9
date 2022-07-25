@@ -125,7 +125,7 @@ const About = () => {
                             <h2 className='about__info__heading'>Experience</h2>
                             <AboutInfoItem 
                                 title="Internships "
-                                items={["Accenture: Aplication Development Analyst"]}
+                                items={["Accenture: Aplication Development Sofware"]}
                             />
 
                            
@@ -135,17 +135,17 @@ const About = () => {
                             <h2 className='about__info__heading'>My Skill </h2>
                             <AboutInfoItem 
                                 title="BackEnd"
-                                items={["SQL", "PHP", "Python", "Scripting"]}
+                                items={["SQL", "Django", "Python", "Bash-Scripting", "PostgreSQL"]}
                             />
 
                             <AboutInfoItem 
                                 title="FrontEnd"
-                                items={["HTML","CSS","JavaScript", "React JS"]}
+                                items={["HTML","CSS","JavaScript", "React JS","Three JS"]}
                             />
                             
                             <AboutInfoItem 
                                 title="Other"
-                                items={["Data Science","AWS","Data Migration "]}
+                                items={["Data Science","AWS","Data Migration","Git","Machine Learning"]}
                             />
                         </div>
                     </div>
