@@ -124,6 +124,14 @@ const About = () => {
                         <div className='about__info__item'>
                             <h2 className='about__info__heading'>Experience</h2>
                             <AboutInfoItem 
+                                title="Software Engineer "
+                                items={["Akorbi: Software Engineer, I have worked in the development of a scheduling platform, focusing mainly as a front-end developer using React."]}
+                            />
+                            <AboutInfoItem 
+                                title="Software Developer "
+                                items={["TicSocial: I created with the team solutions for healthcare companies and EPS in Colombia, focusing on the creation of a patient management platform with React JS for the front-end and Django for the back-end."]}
+                            />
+                            <AboutInfoItem 
                                 title="Internships "
                                 items={["Accenture: Aplication Development Sofware"]}
                             />
@@ -135,17 +143,17 @@ const About = () => {
                             <h2 className='about__info__heading'>My Skill </h2>
                             <AboutInfoItem 
                                 title="BackEnd"
-                                items={["SQL", "Django", "Python", "Bash-Scripting", "PostgreSQL"]}
+                                items={["NodeJS","SQL", "GraphQL", "Django", "Python", "Bash-Scripting", "PostgreSQL"]}
                             />
 
                             <AboutInfoItem 
                                 title="FrontEnd"
-                                items={["HTML","CSS","JavaScript", "React JS","Three JS"]}
+                                items={["TypeScript","JavaScript","React JS", "Redux","Next JS", "Three JS"]}
                             />
                             
                             <AboutInfoItem 
                                 title="Other"
-                                items={["Data Science","AWS","Data Migration","Git","Machine Learning"]}
+                                items={["AWS","Azure", "Data Migration","Git","Machine Learning","POO","SCRUM"]}
                             />
                         </div>
                     </div>
