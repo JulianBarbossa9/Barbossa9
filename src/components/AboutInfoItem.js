@@ -7,6 +7,7 @@ const AboutItemStyle = styled.div`
     align-items: center;
     justify-content: flex-start;
     margin-top: 2rem;
+    margin-bottom: 5rem;
     position: relative;
     .title{
         font-size:2rem;
@@ -22,6 +23,9 @@ const AboutItemStyle = styled.div`
         background-color: var(--deep-dark);
         padding: 0.5rem;
         border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
   
