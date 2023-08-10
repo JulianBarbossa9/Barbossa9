@@ -1,5 +1,5 @@
 import React,{Fragment} from 'react';
-import JuliImage from '../assets/images/img3.png';
+import JuliImage from '../assets/images/sba.jpeg';
 import ButtonSectionHeader from './ButtonSectionHeader';
 import PresentText from './PresentText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 
 const HeaderStyle = styled.div`
-    .hero{
+    .section{
         height: 100vh;
         min-height: 1000px;
         width: 100%;
@@ -19,7 +19,7 @@ const HeaderStyle = styled.div`
         position: relative;
         margin-top: 1.5rem;
     }
-    .hero_social_text{
+    .section_social_text{
         ul{
                 li{
                     margin-bottom:0.5rem ;
@@ -34,39 +34,39 @@ const HeaderStyle = styled.div`
                 }
             }
     }
-    .hero__heading{
+    .section__heading{
         font-size: 1rem;
         margin-bottom: -2.5rem;
         position: relative;
         margin-top: 2.2rem;
         
-        .hero_salu{
+        .section_salu{
             margin-top: 1.5rem;
         }
         span {
             display: inline-block;
             width: 100%;
         }
-        .hero__name{
+        .section__name{
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family:'Montserrat SemiBold' ;
             color:var(--white);
         }
     }
-    .hero__image{
+    .section__image{
         max-width: 800px;
         width: 100%;
         height: 650px;
         margin: 0 auto;
         border: 2px solid var(--gray-1);
     }
-    .hero__info{
+    .section__info{
         margin-top: -8rem;
         
     }
-    .hero__social,
-    .hero__scrollDown{
+    .section__social,
+    .section__scrollDown{
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -74,17 +74,17 @@ const HeaderStyle = styled.div`
         bottom:200px;
         width: 50px;        
     }
-    .hero__social{
+    .section__social{
         left: 45px;
         
     }
-    .hero__scrollDown{
+    .section__scrollDown{
         right: 35px;
         margin-right: 10px;
         
     }
-    .hero_social_indicator,
-    .hero__scrollDown{
+    .section_social_indicator,
+    .section__scrollDown{
         width: 50px;
         p{
             font-size: 0.5rem;
@@ -99,7 +99,7 @@ const HeaderStyle = styled.div`
             object-fit: contain;
             
         }
-        .hero__srollDown{
+        .section__srollDown{
             img{
                 
                 max-height: 90px;
@@ -108,28 +108,28 @@ const HeaderStyle = styled.div`
 
     }
     @media only screen and (max-width:768px){
-        .hero{
+        .section{
             min-height: 750px;
         }
-        .hero__heading{
+        .section__heading{
             font-size: 0.5rem;
             margin-bottom: -2rem;
 
-            .hero__name{
+            .section__name{
                 font-size: 2rem;
             }
         }
-        .hero__image{
+        .section__image{
             height: 300px;
         }
-        .hero__info{
+        .section__info{
             margin-top: 1rem;
         }
-        .hero__social{
+        .section__social{
             left: 0px;
             bottom: 15%;
             width: 20px;
-            .hero_social_indicator{
+            .section_social_indicator{
                 width: 20px;
                 p{
                     font-size: 0.3rem;
@@ -139,7 +139,7 @@ const HeaderStyle = styled.div`
                 }
             }
         }
-        .hero_social_text{
+        .section_social_text{
             ul{
                 li{
                     a{
@@ -150,7 +150,7 @@ const HeaderStyle = styled.div`
                 }
             }
         }
-        .hero__scrollDown {
+        .section__scrollDown {
             right: 0;
             width: 10px;
             gap:1.3rem;
@@ -164,16 +164,16 @@ const HeaderSection = () => {
     return (  
         <Fragment>
             <HeaderStyle>
-                <div className="hero">
+                <div className="section">
                     <div className="container">
-                        <h1 className="hero__heading">
-                            <span className="hero_salu"> Hello, This is</span>
-                            <span className="hero__name"> Julian Barbosa </span>
+                        <h1 className="section__heading">
+                            <span className="section_salu"> Hello, I am</span>
+                            <span className="section__name"> Julian Barbosa </span>
                         </h1>
-                        <div className="hero__image">
+                        <div className="section__image">
                             <img src={JuliImage} alt="fotoJulianB"/>
                         </div>
-                        <div className="hero__info">
+                        <div className="section__info">
                             <PresentText 
                                 mensaje="Hello everyone out there, I am a person quite curious in what has to do with technology especially with software development and programming."
                             />
@@ -184,13 +184,13 @@ const HeaderSection = () => {
                             />
                         </div>
 
-                        <div className="hero__social">
-                            <div className="hero_social_indicator">
+                        <div className="section__social">
+                            <div className="section_social_indicator">
                                 <p>Follow</p>
                                 <img src={SocialMediaArrow} alt="Social Media"/>
                             </div>
 
-                            <div className="hero_social_text">
+                            <div className="section_social_text">
                                 <ul>
                                     <li>
                                         <a href="https://www.linkedin.com/in/julianbarbossa9/" rel="noreferrer" target="_blank">LI</a>
@@ -205,7 +205,7 @@ const HeaderSection = () => {
                             </div>
                         </div>
 
-                        <div className="hero__scrollDown">
+                        <div className="section__scrollDown">
                             <p>Scroll</p>
                             <img src={ScrollDownArrow} alt="scroll"/>
                         </div>
